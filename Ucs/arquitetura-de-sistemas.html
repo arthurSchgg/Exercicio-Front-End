@@ -10,6 +10,55 @@
     <hr>
 </header>
 <body>
+    <h1>Arquitetura De Sistemas: </h1>
+    <h2>Professor responsável pela UC: <a href="/professores/lucas.html">Lucas</a></h2>
+
+    <p>Nesta UC, exploramos padrões de projeto (Design Patterns) e arquitetura em camadas (MVC), 
+        aplicando os conceitos na prática por meio de uma Situação de Aprendizagem (SA) com um 
+        sistema Java completo em console.</p>
+    <h2>Fundamentos estudados:</h2>
+    <ul>
+        <li>Design Patterns (Padrões de Projeto);</li>
+        <li>Arquitetura MVC (exemplo prático);</li>
+        <li>POO e tratamento de erros com Try/Catch.</li>
+    </ul>
+    <br>
+    <h2>Situação de Aprendizagem (SA) — WegAsset Control:</h2>
+
+    <p>Sistema de Monitoramento e Gestão de Ativos Industriais desenvolvido em Java puro, via console, 
+        simulando uma solução interna da WEG para controle de ativos, sensores, alertas e manutenções 
+        em ambiente fabril. Grupos formados de 5 a 6 integrantes.</p>
+
+        <h4>Arquitetura Utilizada: </h4>
+        <ul>
+            <li>Entity, Repository (armazenamento em memória com HashMap), Service (regras de negócio), 
+                Controller e View, seguindo o padrão MVC;</li>
+            <li>Arquitetura MVC com camadas Service, Repository e Entity, armazenamento em memória (HashMap);</li>
+            <li>View não acessa o Repository diretamente;</li>
+            <li>Enums: PerfilAcesso, StatusAtivo, NivelAlerta, StatusAlerta, StatusManutencao;</li>
+            <li>Exceções customizadas: RegraNegocioException, EntidadeNaoEncontradaException, AcessoNegadoException;</li>
+            <li>Tratamento de erros com try/catch.</li>
+        </ul>
     
+    <h4>Perfis de acesso:</h4>
+        <ul>
+            <li>Administrador: acesso completo ao sistema;</li>
+            <li>Supervisor: gerencia setores, ativos, sensores, alertas, técnicos, manutenções e relatórios 
+                (sem alterar perfis administrativos);</li>
+            <li>Técnico: consulta ativos, sensores e alertas, atualiza manutenções atribuídas a ele;</li>
+            <li>Operador: apenas consulta ativos, setores e alertas abertos.</li>
+        </ul>
+
+    <h4>Ferramentas:</h4>
+        <ul>
+            <li>Java puro (sem frameworks);</li>
+            <li>Execução via console;</li>
+            <li>POO;</li>
+            <li>HashMap/Map para persistência em memória.</li>
+        </ul>
+    <br>
+    <br>
+    <br>
+    <button onclick="history.back()">Voltar</button>
 </body>
 </html>
